@@ -1,0 +1,27 @@
+
+<br />
+<br />
+<h1>Employee details</h1>
+<button>hii</button>
+
+<table>
+    <tr>
+        <td>First name:</td>
+        <td>{{lastname}}</td>
+    </tr>
+    <tr>
+        <td>last name:</td>
+        <td>{{lastname}}</td>
+    </tr >
+    <tr *ngIf='showDetails'>
+        <td>gender:</td>
+        <td>{{gender}}</td>
+    </tr>
+    <tr *ngIf='showDetails'>
+        <td>age:</td>
+        <td>{{age}}</td>
+
+    </tr>
+</table>
+<br/>
+<button  (click)="toggleDetails()">show details</button>
